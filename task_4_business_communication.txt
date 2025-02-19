@@ -1,0 +1,30 @@
+Subject: Data Quality Issues – Key Findings & Next Steps
+
+Hey Team,
+
+Hope you're doing well!
+
+As we’ve been digging into the receipts, users, and brands data to answer key business questions, we came across a few data quality issues that could impact our reporting accuracy. I wanted to highlight them and get your thoughts on how we should move forward.
+
+Key Findings:
+Missing Data: Some receipts are missing critical fields like "purchaseDate" and "totalSpent", which makes it tricky to analyze spending patterns.
+Date Anomalies: A few receipts have purchase dates that don’t align with expected processing timelines.
+Duplicate User IDs: We found some users with duplicate accounts, which could skew insights around customer behavior.
+Barcode Mismatches: Some receipts reference brands that aren’t in our brand dataset, which might lead to incomplete reporting on brand performance.
+
+Suggested Fixes:
+Should we infer missing "purchaseDate" and "totalSpent" values from other fields, or flag them as incomplete transactions?
+Do we have a process to resolve barcode mismatches—should we validate receipts before ingestion or update the brand database?
+What’s our approach for duplicate users? Should we merge them, or do we intentionally allow multiple accounts per user?
+
+Why This Matters:
+Better Data = Better Insights: Fixing these issues will ensure that our brand rankings and purchase analytics are accurate.
+Scalability Concerns: If these inconsistencies aren’t addressed now, they could become bigger bottlenecks as we scale.
+Impact on Users: Clean data means better user experience—accurate rewards, smoother transactions, and reliable insights.
+
+Would love to get your input on this. Let me know if you have any questions.
+
+Looking forward to your thoughts.
+
+Best,
+Siddharth Singh Chouhan
